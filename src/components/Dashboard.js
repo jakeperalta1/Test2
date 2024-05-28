@@ -199,7 +199,7 @@ const Dashboard = () => {
         <h2>Current Balance: ${balance}</h2>
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
       </div>
-      {/* <div>
+      <div>
 
         <h2>Transactions:</h2>
 
@@ -228,7 +228,7 @@ const Dashboard = () => {
             ))}
           </tbody>
         </table>
-      </div> */}
+      </div>
     </div>
   );
 };

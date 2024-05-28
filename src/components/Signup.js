@@ -135,7 +135,12 @@ const Signup = () => {
         <button className="btn btn-primary themebutton" onClick={handleSignup}>Signup</button>
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
       </div>
-      
+      <h2>Registered Users:</h2>
+                <ul>
+                    {users.map((user, index) => (
+                        <li key={index}>{user.Name} - {user.About.Email} {user.About.Password} {user.About.AccountNumber}</li>
+                    ))}
+                </ul>
     </div>
   );
 };
